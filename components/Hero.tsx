@@ -1,19 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail, FileText } from "lucide-react";
+import { ArrowUpRight, Code, Globe, Mail, FileText } from "lucide-react";
 import { personal } from "@/lib/data";
 
 const socialLinks = [
   {
     label: "GitHub",
     href: personal.github,
-    icon: Github,
+    icon: Code,
   },
   {
     label: "LinkedIn",
     href: personal.linkedin,
-    icon: Linkedin,
+    icon: Globe,
   },
   {
     label: "Email",
@@ -22,8 +22,9 @@ const socialLinks = [
   },
   {
     label: "Resume PDF",
-    href: `mailto:${personal.email}?subject=Resume%20Request`,
+    href: "/resume.pdf",
     icon: FileText,
+    download: "Muhammad_Jalal_Resume.pdf",
   },
 ];
 
@@ -39,7 +40,7 @@ const itemVariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
 
@@ -85,6 +86,7 @@ export default function Hero() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                {...(s.download ? { download: s.download } : {})}
                 className="group inline-flex items-center gap-2 border border-border text-sm font-medium px-4 py-2.5 rounded-full hover:bg-foreground hover:text-background hover:border-foreground transition-all duration-300"
               >
                 <s.icon className="w-4 h-4" />
@@ -129,7 +131,7 @@ export default function Hero() {
             {personal.location}
           </span>
           <span className="hidden sm:block">·</span>
-          <span>NUST — BS Artificial Intelligence (CGPA 3.64)</span>
+          <span>NUST — BS Artificial Intelligence (CGPA 3.47)</span>
           <span className="hidden sm:block">·</span>
           <span>FBISE Gold Medalist</span>
         </motion.div>

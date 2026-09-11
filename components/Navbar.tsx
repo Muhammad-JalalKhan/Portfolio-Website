@@ -6,7 +6,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { personal } from "@/lib/data";
 
 const navLinks = [
-  { label: "Work", count: "08", href: "#work" },
+  { label: "Work", count: "16", href: "#work" },
   { label: "Services", count: "04", href: "#services" },
   { label: "Experience", count: "05", href: "#experience" },
   { label: "Contact", count: null, href: "#contact" },
@@ -28,11 +28,11 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl transition-all duration-300 ${
+        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl transition-all duration-300 rounded-full px-4 md:px-6 py-3 border border-neutral-200/60 bg-white/70 backdrop-blur-md backdrop-saturate-150 ${
           scrolled
-            ? "bg-white/80 backdrop-blur-xl shadow-lg shadow-black/[0.03] border border-border"
-            : "bg-white/60 backdrop-blur-md border border-border/50"
-        } rounded-full px-4 md:px-6 py-3`}
+            ? "shadow-[0_4px_20px_rgba(0,0,0,0.04)]"
+            : "shadow-sm"
+        }`}
       >
         <div className="flex items-center justify-between">
           {/* Availability Badge */}

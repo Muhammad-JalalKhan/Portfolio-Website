@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail, Heart } from "lucide-react";
+import { ArrowUpRight, Code, Globe, Mail, Heart } from "lucide-react";
 import { personal } from "@/lib/data";
 
 const footerLinks = [
-  { label: "GitHub", href: personal.github, icon: Github },
-  { label: "LinkedIn", href: personal.linkedin, icon: Linkedin },
+  { label: "GitHub", href: personal.github, icon: Code },
+  { label: "LinkedIn", href: personal.linkedin, icon: Globe },
   { label: "Email", href: `mailto:${personal.email}`, icon: Mail },
 ];
 
