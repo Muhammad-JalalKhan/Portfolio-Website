@@ -5,64 +5,120 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0-black?style=flat&logo=framer)](https://www.framer.com/motion/)
+[![Deployment Status](https://img.shields.io/badge/Vercel-Deployed-success?style=flat&logo=vercel)](https://portfolio-website-rosy-six-60.vercel.app/)
 
-> 🌐 **Live Website:** [portfolio-website-rosy-six-60.vercel.app](https://portfolio-website-rosy-six-60.vercel.app/)
+> 🌐 **Production URL:** [portfolio-website-rosy-six-60.vercel.app](https://portfolio-website-rosy-six-60.vercel.app/)
 
-A modern, typography-driven editorial portfolio website showcasing selected engineering works, autonomous multi-agent pipelines, edge computer vision architectures, and startup leadership.
----
-
-## ⚡ Key Highlights
-
-- **Fluid Editorial Typography:** Built with dynamic CSS `clamp()` viewport typography to ensure zero layout clipping across ultrawide monitors, standard laptops, and mobile screens.
-- **Glassmorphic Navigation:** Sticky frosted header with real-time availability indicator and responsive link collapsing.
-- **Interactive Project Filtering:** Dynamic client-side sorting across 16 technical initiatives categorized by AI & Agents, Computer Vision & Geospatial, Systems & Infrastructure, and Applied ML & IoT.
-- **Deep-Tech Showcase:** Covers end-to-end projects spanning LangGraph multi-agent systems, YOLOv8 edge vision pipelines, distributed Dask clusters, and startup incubation deliverables.
-- **Direct PDF Asset Integration:** Seamlessly serves `/public/resume.pdf` for direct browser previews and downloads.
+A typography-driven, responsive personal portfolio built with Next.js 14 and Tailwind CSS. The site communicates engineering capability through calm visual hierarchy, fluid viewport scaling, and distraction-free layouts showcasing autonomous agents, computer vision systems, and startup engineering initiatives.
 
 ---
 
-## 🛠️ Tech Stack
+## ⚡ Architectural Highlights
 
-| Layer | Technology |
+* **Fluid Responsive Typography:** Implements dynamic CSS `clamp()` viewport typography across large display headings, preventing text clipping and horizontal overflow across mobile (360px) to ultrawide (4K) viewports.
+* **Glassmorphic Navigation:** Sticky header container with backdrop blur (`backdrop-blur-md`), ambient border contrast, an active availability pulse indicator, and responsive link collapsing for mobile devices.
+* **Dynamic Work Filtering:** Interactive client-side filtering matrix organizing 16 engineering initiatives across four primary categories: *AI & Agents*, *Computer Vision & Geospatial*, *Systems & Infrastructure*, and *Applied ML & IoT*.
+* **Integrated Static Document Delivery:** Native routing directly serves the verified curriculum vitae via `/public/resume.pdf` for in-browser inspection or download.
+* **Type-Safe Component System:** Clean modular architecture built with Next.js App Router and TypeScript, ensuring zero build-time warnings or deployment failures.
+
+---
+
+## 🛠️ System Stack
+
+| Layer | Technologies |
 | :--- | :--- |
-| **Framework** | Next.js 14 (App Router) |
+| **Core Framework** | Next.js 14 (App Router) |
 | **Language** | TypeScript |
-| **Styling** | Tailwind CSS |
-| **Animations** | Framer Motion |
-| **Icons** | Lucide React |
-| **Hosting & CI/CD** | Vercel |
+| **Styling & Design System** | Tailwind CSS, PostCSS |
+| **Animation Engine** | Framer Motion |
+| **Iconography** | Lucide React |
+| **Hosting & CI/CD** | Vercel Edge Network |
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Layout
 
 ```text
+Portfolio-Website/
 ├── app/
-│   ├── globals.css          # Global typography rules & overflow reset
-│   ├── layout.tsx           # SEO metadata & font definitions
-│   └── page.tsx             # Master page assembling core sections
+│   ├── globals.css          # CSS reset, clamp scales, and custom scroll locks
+│   ├── layout.tsx           # Application shell, font imports, and SEO metadata
+│   └── page.tsx             # Master page assembling modular portfolio sections
 ├── components/
-│   ├── Navbar.tsx           # Glassmorphic header with status badge
-│   ├── Hero.tsx             # Fluid editorial nameplate & quick links
-│   ├── SelectedWork.tsx     # 16-project interactive grid with category filters
-│   ├── Services.tsx         # Expandable service capability list
-│   ├── Experience.tsx       # Dark-contrast industry & startup timeline
-│   ├── CommunityBanner.tsx  # Hackathon awards & fellowship marquee
-│   └── Footer.tsx           # Contact CTA & external profiles
+│   ├── Navbar.tsx           # Sticky frosted glass navigation with status indicator
+│   ├── Hero.tsx             # Fluid nameplate, avatar badge, and quick outbound links
+│   ├── SelectedWork.tsx     # 16-project dynamic grid with multi-category filtering
+│   ├── Services.tsx         # Expandable service capability and architecture rows
+│   ├── Experience.tsx       # Dark-contrast professional timeline and startup history
+│   ├── CommunityBanner.tsx  # Marquee of hackathon accolades and campus achievements
+│   └── Footer.tsx           # Contact CTA module and social profile directory
 ├── public/
-│   └── resume.pdf           # Live downloadable CV asset
-├── portfolio-data.md        # Source-of-truth project data and copy
-├── tailwind.config.ts       # Design tokens, spacing, and custom animations
-└── tsconfig.json            # Strict TypeScript configuration
+│   └── resume.pdf           # Static curriculum vitae asset for browser preview
+├── portfolio-data.md        # Source-of-truth project metrics, dates, and copy
+├── tailwind.config.ts       # Breakpoint extensions and typography styling
+├── tsconfig.json            # Strict TypeScript configuration
+└── package.json             # Pinned project dependencies and scripts
+🚀 Key Featured Initiatives
+The portfolio showcases full-stack systems engineering across 16 technical projects:
 
+Autonomous EHS Compliance Engine: Hybrid edge-to-cloud computer vision pipeline utilizing local YOLOv8 processing to filter 99% of normal frames, passing edge cases to cloud vision-language models for hazard auditing.
 
+ThermaX OS: Climate resilience platform combining temperature API feeds with LangGraph multi-agent orchestration for urban cooling intervention (FortyGuard Global Heat Intelligence Hackathon).
 
-## 📬 Contact & Connect
+Dawae-Check: Anti-counterfeit pharmaceutical packaging verification engine integrating fine-tuned Qwen2.5-VL models (National Finalist, Alibaba Cloud AI Hackathon Pakistan).
 
-* **Live Portfolio:** [portfolio-website-rosy-six-60.vercel.app](https://portfolio-website-rosy-six-60.vercel.app/)
-* **Author:** Muhammad Jalal[cite: 1]
-* **Affiliation:** BS Artificial Intelligence, National University of Sciences and Technology (NUST)[cite: 1]
-* **Location:** Quetta, Pakistan[cite: 1]
-* **Email:** [jalal.bsai24.nbc@student.nust.edu.pk](mailto:jalal.bsai24.nbc@student.nust.edu.pk)
-* **GitHub:** [@Muhammad-JalalKhan](https://github.com/Muhammad-JalalKhan)[cite: 1]
-* **LinkedIn:** [Muhammad Jalal Khan](https://www.linkedin.com/in/muhammad-jalal-khan-5132b429b)[cite: 1]
+Self-Correcting Autonomous Coding Agent: Multi-node autonomous code synthesis and execution loop with AST trace analysis and self-healing debugging chains.
+
+Sentinel AI: Decoupled LLM inference firewall detecting prompt injections and adversarial inputs in under 50ms using semantic embeddings and XGBoost.
+
+Distributed Computing Cluster: Private compute grid running across workstations over a Tailscale mesh network for parallel ML training via Dask and Docker.
+
+Aqualytica (HydroScan): IoT water-quality monitoring platform with analog sensor telemetry incubated at the National Incubation Center (NIC) Quetta.
+
+💻 Local Setup & Execution
+Prerequisites
+Node.js: v18.17.0 or higher
+
+npm: v9.0.0 or higher
+
+Installation Steps
+Clone the repository:
+
+Bash
+git clone [https://github.com/Muhammad-JalalKhan/Portfolio-Website.git](https://github.com/Muhammad-JalalKhan/Portfolio-Website.git)
+cd Portfolio-Website
+Install project dependencies:
+
+Bash
+npm install
+Launch local development server:
+
+Bash
+npm run dev
+Open http://localhost:3000 in your browser to view the application.
+
+Compile for production:
+
+Bash
+npm run build
+🌐 Continuous Deployment
+The repository is linked with Vercel for automatic continuous deployment:
+
+Plaintext
+git push origin main ──► Vercel Build Pipeline ──► Production Edge Network
+Every commit to the main branch triggers an automated preview and production deployment.
+
+Static assets in /public are cached at edge locations for minimal latency worldwide.
+
+📬 Contact & Profiles
+Developer: Muhammad Jalal
+
+Degree Program: BS Artificial Intelligence, National University of Sciences and Technology (NUST)
+
+Location: Quetta, Pakistan
+
+Institutional Email: jalal.bsai24.nbc@student.nust.edu.pk
+
+GitHub: @Muhammad-JalalKhan
+
+LinkedIn: Muhammad Jalal Khan
