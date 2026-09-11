@@ -28,7 +28,7 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl transition-all duration-300 rounded-full px-4 md:px-6 py-3 border border-neutral-200/60 bg-white/70 backdrop-blur-md backdrop-saturate-150 ${
+        className={`fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-1.5rem)] sm:w-[calc(100%-3rem)] max-w-4xl transition-all duration-300 rounded-full px-4 sm:px-6 py-2.5 sm:py-3 border border-neutral-200/70 bg-white/80 backdrop-blur-md backdrop-saturate-150 ${
           scrolled
             ? "shadow-[0_4px_20px_rgba(0,0,0,0.04)]"
             : "shadow-sm"
@@ -36,29 +36,21 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between">
           {/* Availability Badge */}
-          <div className="hidden md:flex items-center gap-2 text-xs font-medium text-muted">
-            <span className="relative flex h-2 w-2">
+          <div className="flex items-center gap-2 text-[11px] sm:text-xs font-medium text-neutral-700 whitespace-nowrap">
+            <span className="relative flex h-2 w-2 shrink-0">
               <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
             </span>
-            <span>Available for New Projects</span>
+            <span className="hidden sm:inline">Available for New Projects</span>
           </div>
 
-          {/* Mobile: green dot only */}
-          <div className="flex md:hidden items-center gap-2 text-xs font-medium text-muted">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
-            </span>
-          </div>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1">
+          {/* Desktop Nav — hidden on mobile */}
+          <nav className="hidden md:flex items-center gap-5 lg:gap-7 text-xs sm:text-sm font-medium text-neutral-600">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="px-3 py-1.5 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors rounded-full hover:bg-foreground/[0.04]"
+                className="hover:text-foreground transition-colors whitespace-nowrap"
               >
                 {link.label}
                 {link.count && (
@@ -74,7 +66,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href="#contact"
-              className="hidden sm:inline-flex items-center gap-1.5 bg-foreground text-background text-xs font-semibold px-4 py-2 rounded-full hover:bg-foreground/90 transition-colors"
+              className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-foreground text-background px-3.5 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs font-semibold whitespace-nowrap hover:bg-foreground/90 transition-colors"
             >
               Let&apos;s Talk
               <ArrowUpRight className="w-3.5 h-3.5" />
