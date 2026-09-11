@@ -58,6 +58,9 @@ Portfolio-Website/
 ├── tailwind.config.ts       # Breakpoint extensions and typography styling
 ├── tsconfig.json            # Strict TypeScript configuration
 └── package.json             # Pinned project dependencies and scripts
+'''text
+
+
 🚀 Key Featured Initiatives
 The portfolio showcases full-stack systems engineering across 16 technical projects:
 
