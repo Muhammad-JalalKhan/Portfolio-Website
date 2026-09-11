@@ -1,13 +1,14 @@
 # Muhammad Jalal — Personal Portfolio
 
+[![Live Site](https://img.shields.io/badge/Live_Demo-Visit_Portfolio-black?style=for-the-badge&logo=vercel)](https://portfolio-website-rosy-six-60.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0-black?style=flat&logo=framer)](https://www.framer.com/motion/)
-[![Deployed on Vercel](https://img.shields.io/badge/Vercel-Deployment-success?style=flat&logo=vercel)](https://vercel.com/)
 
-A modern, typography-driven editorial portfolio website showcasing selected engineering works, autonomous multi-agent pipelines, edge computer vision architectures, and startup leadership. Designed for recruiters, engineering leads, and fellowship selection committees with a focus on fluid layout scaling, high scannability, and calm, distraction-free visual hierarchy.
+> 🌐 **Live Website:** [portfolio-website-rosy-six-60.vercel.app](https://portfolio-website-rosy-six-60.vercel.app/)
 
+A modern, typography-driven editorial portfolio website showcasing selected engineering works, autonomous multi-agent pipelines, edge computer vision architectures, and startup leadership[cite: 1, 2].
 ---
 
 ## ⚡ Key Highlights
