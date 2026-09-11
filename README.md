@@ -8,7 +8,7 @@
 
 > 🌐 **Live Website:** [portfolio-website-rosy-six-60.vercel.app](https://portfolio-website-rosy-six-60.vercel.app/)
 
-A modern, typography-driven editorial portfolio website showcasing selected engineering works, autonomous multi-agent pipelines, edge computer vision architectures, and startup leadership[cite: 1, 2].
+A modern, typography-driven editorial portfolio website showcasing selected engineering works, autonomous multi-agent pipelines, edge computer vision architectures, and startup leadership.
 ---
 
 ## ⚡ Key Highlights
@@ -54,9 +54,15 @@ A modern, typography-driven editorial portfolio website showcasing selected engi
 ├── portfolio-data.md        # Source-of-truth project data and copy
 ├── tailwind.config.ts       # Design tokens, spacing, and custom animations
 └── tsconfig.json            # Strict TypeScript configuration
-🚀 Featured Work HighlightsThis portfolio catalogs 16 production systems, research implementations, and civic-tech ventures:  Autonomous EHS Compliance Engine: Hybrid edge-to-cloud CV pipeline filtering 99% of normal video frames at the edge with YOLOv8 and zero-shot VLM hazard validation[cite: 2].ThermaX OS (FortyGuard Hackathon '26): Climate resilience engine combining temperature API telemetry with LangGraph multi-agent orchestration.  Dawae-Check (Alibaba Cloud AI Hackathon '26): National finalist anti-counterfeit pharmaceutical inspection model utilizing fine-tuned Qwen2.5-VL[cite: 1, 2].Self-Correcting Autonomous Coding Agent: Multi-node LangGraph execution loop with runtime AST parsing and automated self-debugging[cite: 1, 2].Sentinel AI: Decoupled LLM inference security firewall detecting prompt injection attacks in under 50ms[cite: 1, 2].Distributed Computing Cluster: High-performance grid over a Tailscale mesh network for parallel model hyperparameter tuning using Dask and Docker[cite: 1, 2].Aqualytica (HydroScan): IoT water-quality monitoring system incubated at the National Incubation Center (NIC) Quetta[cite: 1, 2].💻 Local DevelopmentClone the repository:Bashgit clone [https://github.com/Muhammad-JalalKhan/Portfolio-Website.git](https://github.com/Muhammad-JalalKhan/Portfolio-Website.git)
-cd Portfolio-Website
-Install dependencies:Bashnpm install
-Start the development server:Bashnpm run dev
-Build for production:Bashnpm run build
-📬 Contact & ConnectAuthor: Muhammad Jalal  Affiliation: BS Artificial Intelligence, National University of Sciences and Technology (NUST)  Location: Quetta, Pakistan  Email: jalal.bsai24.nbc@student.nust.edu.pkGitHub: @Muhammad-JalalKhan  LinkedIn: Muhammad Jalal Khan
+
+
+
+## 📬 Contact & Connect
+
+* **Live Portfolio:** [portfolio-website-rosy-six-60.vercel.app](https://portfolio-website-rosy-six-60.vercel.app/)
+* **Author:** Muhammad Jalal[cite: 1]
+* **Affiliation:** BS Artificial Intelligence, National University of Sciences and Technology (NUST)[cite: 1]
+* **Location:** Quetta, Pakistan[cite: 1]
+* **Email:** [jalal.bsai24.nbc@student.nust.edu.pk](mailto:jalal.bsai24.nbc@student.nust.edu.pk)
+* **GitHub:** [@Muhammad-JalalKhan](https://github.com/Muhammad-JalalKhan)[cite: 1]
+* **LinkedIn:** [Muhammad Jalal Khan](https://www.linkedin.com/in/muhammad-jalal-khan-5132b429b)[cite: 1]
