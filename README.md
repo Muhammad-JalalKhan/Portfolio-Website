@@ -9,17 +9,29 @@
 
 > 🌐 **Production URL:** [portfolio-website-rosy-six-60.vercel.app](https://portfolio-website-rosy-six-60.vercel.app/)
 
-A typography-driven, responsive personal portfolio built with Next.js 14 and Tailwind CSS. The site communicates engineering capability through calm visual hierarchy, fluid viewport scaling, and distraction-free layouts showcasing autonomous agents, computer vision systems, and startup engineering initiatives.
+A typography-driven, responsive personal portfolio built with **Next.js 14** and **Tailwind CSS**. The site communicates engineering capability through calm visual hierarchy, fluid viewport scaling, and distraction-free layouts showcasing autonomous agents, computer vision systems, and startup engineering initiatives.
+
+---
+
+## Table of Contents
+
+- [Architectural Highlights](#-architectural-highlights)
+- [System Stack](#️-system-stack)
+- [Repository Layout](#-repository-layout)
+- [Key Featured Initiatives](#-key-featured-initiatives)
+- [Local Setup & Execution](#-local-setup--execution)
+- [Continuous Deployment](#-continuous-deployment)
+- [Contact & Profiles](#-contact--profiles)
 
 ---
 
 ## ⚡ Architectural Highlights
 
-* **Fluid Responsive Typography:** Implements dynamic CSS `clamp()` viewport typography across large display headings, preventing text clipping and horizontal overflow across mobile (360px) to ultrawide (4K) viewports.
-* **Glassmorphic Navigation:** Sticky header container with backdrop blur (`backdrop-blur-md`), ambient border contrast, an active availability pulse indicator, and responsive link collapsing for mobile devices.
-* **Dynamic Work Filtering:** Interactive client-side filtering matrix organizing 16 engineering initiatives across four primary categories: *AI & Agents*, *Computer Vision & Geospatial*, *Systems & Infrastructure*, and *Applied ML & IoT*.
-* **Integrated Static Document Delivery:** Native routing directly serves the verified curriculum vitae via `/public/resume.pdf` for in-browser inspection or download.
-* **Type-Safe Component System:** Clean modular architecture built with Next.js App Router and TypeScript, ensuring zero build-time warnings or deployment failures.
+- **Fluid Responsive Typography** — Dynamic CSS `clamp()` viewport typography across large display headings, preventing text clipping and horizontal overflow from mobile (360px) to ultrawide (4K) viewports.
+- **Glassmorphic Navigation** — Sticky header container with backdrop blur (`backdrop-blur-md`), ambient border contrast, an active availability pulse indicator, and responsive link collapsing for mobile devices.
+- **Dynamic Work Filtering** — Interactive client-side filtering matrix organizing 16 engineering initiatives across four primary categories: *AI & Agents*, *Computer Vision & Geospatial*, *Systems & Infrastructure*, and *Applied ML & IoT*.
+- **Integrated Static Document Delivery** — Native routing directly serves the verified curriculum vitae via `/public/resume.pdf` for in-browser inspection or download.
+- **Type-Safe Component System** — Clean modular architecture built with Next.js App Router and TypeScript, ensuring zero build-time warnings or deployment failures.
 
 ---
 
@@ -58,70 +70,85 @@ Portfolio-Website/
 ├── tailwind.config.ts       # Breakpoint extensions and typography styling
 ├── tsconfig.json            # Strict TypeScript configuration
 └── package.json             # Pinned project dependencies and scripts
-'''text
+```
 
+---
 
-🚀 Key Featured Initiatives
-The portfolio showcases full-stack systems engineering across 16 technical projects:
+## 🚀 Key Featured Initiatives
 
-Autonomous EHS Compliance Engine: Hybrid edge-to-cloud computer vision pipeline utilizing local YOLOv8 processing to filter 99% of normal frames, passing edge cases to cloud vision-language models for hazard auditing.
+The portfolio showcases full-stack systems engineering across 16 technical projects, including:
 
-ThermaX OS: Climate resilience platform combining temperature API feeds with LangGraph multi-agent orchestration for urban cooling intervention (FortyGuard Global Heat Intelligence Hackathon).
+| Project | Description |
+| :--- | :--- |
+| **Autonomous EHS Compliance Engine** | Hybrid edge-to-cloud computer vision pipeline using local YOLOv8 processing to filter 99% of normal frames, passing edge cases to cloud vision-language models for hazard auditing. |
+| **ThermaX OS** | Climate resilience platform combining temperature API feeds with LangGraph multi-agent orchestration for urban cooling intervention *(FortyGuard Global Heat Intelligence Hackathon)*. |
+| **Dawae-Check** | Anti-counterfeit pharmaceutical packaging verification engine integrating fine-tuned Qwen2.5-VL models — *National Finalist, Alibaba Cloud AI Hackathon Pakistan*. |
+| **Self-Correcting Autonomous Coding Agent** | Multi-node autonomous code synthesis and execution loop with AST trace analysis and self-healing debugging chains. |
+| **Sentinel AI** | Decoupled LLM inference firewall detecting prompt injections and adversarial inputs in under 50ms using semantic embeddings and XGBoost. |
+| **Distributed Computing Cluster** | Private compute grid running across workstations over a Tailscale mesh network for parallel ML training via Dask and Docker. |
+| **Aqualytica (HydroScan)** | IoT water-quality monitoring platform with analog sensor telemetry, incubated at the National Incubation Center (NIC) Quetta. |
 
-Dawae-Check: Anti-counterfeit pharmaceutical packaging verification engine integrating fine-tuned Qwen2.5-VL models (National Finalist, Alibaba Cloud AI Hackathon Pakistan).
+---
 
-Self-Correcting Autonomous Coding Agent: Multi-node autonomous code synthesis and execution loop with AST trace analysis and self-healing debugging chains.
+## 💻 Local Setup & Execution
 
-Sentinel AI: Decoupled LLM inference firewall detecting prompt injections and adversarial inputs in under 50ms using semantic embeddings and XGBoost.
+### Prerequisites
 
-Distributed Computing Cluster: Private compute grid running across workstations over a Tailscale mesh network for parallel ML training via Dask and Docker.
+- **Node.js** ≥ v18.17.0
+- **npm** ≥ v9.0.0
 
-Aqualytica (HydroScan): IoT water-quality monitoring platform with analog sensor telemetry incubated at the National Incubation Center (NIC) Quetta.
+### Installation Steps
 
-💻 Local Setup & Execution
-Prerequisites
-Node.js: v18.17.0 or higher
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Muhammad-JalalKhan/Portfolio-Website.git
+   cd Portfolio-Website
+   ```
 
-npm: v9.0.0 or higher
+2. **Install project dependencies**
+   ```bash
+   npm install
+   ```
 
-Installation Steps
-Clone the repository:
+3. **Launch local development server**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-Bash
-git clone [https://github.com/Muhammad-JalalKhan/Portfolio-Website.git](https://github.com/Muhammad-JalalKhan/Portfolio-Website.git)
-cd Portfolio-Website
-Install project dependencies:
+4. **Compile for production**
+   ```bash
+   npm run build
+   ```
 
-Bash
-npm install
-Launch local development server:
+---
 
-Bash
-npm run dev
-Open http://localhost:3000 in your browser to view the application.
+## 🌐 Continuous Deployment
 
-Compile for production:
+The repository is linked with **Vercel** for automatic continuous deployment:
 
-Bash
-npm run build
-🌐 Continuous Deployment
-The repository is linked with Vercel for automatic continuous deployment:
-
-Plaintext
+```
 git push origin main ──► Vercel Build Pipeline ──► Production Edge Network
-Every commit to the main branch triggers an automated preview and production deployment.
+```
 
-Static assets in /public are cached at edge locations for minimal latency worldwide.
+- Every commit to the `main` branch triggers an automated preview and production deployment.
+- Static assets in `/public` are cached at edge locations for minimal latency worldwide.
 
-📬 Contact & Profiles
-Developer: Muhammad Jalal
+---
 
-Degree Program: BS Artificial Intelligence, National University of Sciences and Technology (NUST)
+## 📬 Contact & Profiles
 
-Location: Quetta, Pakistan
+| | |
+| :--- | :--- |
+| **Developer** | Muhammad Jalal |
+| **Degree Program** | BS Artificial Intelligence, National University of Sciences and Technology (NUST) |
+| **Location** | Quetta, Pakistan |
+| **Institutional Email** | jalal.bsai24.nbc@student.nust.edu.pk |
+| **GitHub** | [@Muhammad-JalalKhan](https://github.com/Muhammad-JalalKhan) |
+| **LinkedIn** | [Muhammad Jalal Khan](https://www.linkedin.com/) |
 
-Institutional Email: jalal.bsai24.nbc@student.nust.edu.pk
+---
 
-GitHub: @Muhammad-JalalKhan
-
-LinkedIn: Muhammad Jalal Khan
+<p align="center">
+  <sub>Built with Next.js, TypeScript, and Tailwind CSS — deployed on Vercel.</sub>
+</p>
